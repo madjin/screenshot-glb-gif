@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "puppeteer": "^22.6.2",
+    "puppeteer-cluster": "^0.24.0",
+    "puppeteer-screen-recorder": "^3.0.3"
+  }
+}
