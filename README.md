@@ -2,6 +2,8 @@
 create gifs from glb files using puppeteer-screen-recorder
 currently defaults to mov files with transparency for converting to transparent gif
 
+![sample](https://github.com/madjin/screenshot-glb-gif/assets/32600939/e6b54533-e31b-4521-aa55-5a78c7c5d106)
+
 Can then convert to gif like so
 `ffmpeg -i file.mov -vf "fps=24,scale=480:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 -f gif - | gifsicle --optimize=3 --colors 16 --delay 8 > out.gif`
 
